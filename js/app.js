@@ -3,7 +3,7 @@ angular.module('myApp',[])
 
 		
 
-		Weather.getWeatherForecast("CA/San_Francisco")
+		Weather.getWeatherForecast("MA/Boston")
 		.then(function(data){
 			$scope.weather.forecast = data;
 		});
