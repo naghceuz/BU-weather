@@ -6,7 +6,7 @@
 		<link rel="stylesheet" href="css/bootstrap.min.css"> 
 		<link rel="stylesheet" href="css/main.css">
 	<script src="js/vendor/angular.min.js"></script> 
-	<script src="js/vendor/angular-route.min.js"></script> 
+	<script src="js/vendor/angular-route.js"></script> 
 	<script src="js/app.js"></script>
 <style>
 @charset "UTF-8";
@@ -39,6 +39,10 @@ ng\:form {
 					<h2>
 						{{ date.raw | date:'EEEE, MMMM yyyy' }}
 					</h2>
+				<div id="forecast">
+					<pre> {{weather.forecast | json}}
+					</pre>
+				</div>	
 				</div>
 			</div>
 		</div>
