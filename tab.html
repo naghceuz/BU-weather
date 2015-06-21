@@ -1,0 +1,50 @@
+<!doctype html>
+<html data-ng-app="myApp" data-ng-csp=""> 
+	<head>
+		<meta charset="UTF-8">
+		<title>BU Weather</title>
+		<link rel="stylesheet" href="css/bootstrap.min.css"> 
+		<link rel="stylesheet" href="css/main.css">
+	<script src="js/vendor/angular.min.js"></script> 
+	<script src="js/vendor/angular-route.min.js"></script> 
+	<script src="js/app.js"></script>
+<style>
+@charset "UTF-8";
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak],
+.ng-cloak, .x-ng-cloak,
+.ng-hide:not(.ng-hide-animate) {
+  display: none !important;
+}
+
+ng\:form {
+  display: block;
+}
+
+.ng-animate-shim {
+  visibility:hidden;
+}
+
+.ng-anchor {
+  position:absolute;
+}
+</style>
+	  </head>
+	<body>
+		<div class="container">
+			<div ng-controller = "MainController">
+				<div id="datetime">
+					<h1>
+						{{ date.raw | date: 'hh mm ss'}}
+					</h1>
+					<h2>
+						{{ date.raw | date:'EEEE, MMMM yyyy' }}
+					</h2>
+				</div>
+			</div>
+		</div>
+
+	  </body>
+</html>
+
+
+
